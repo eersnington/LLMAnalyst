@@ -11,7 +11,8 @@ The `LLMAnalyst` class allows you to interact with HuggingFace-based language mo
 1. Install the package:
 
     ```bash
-    pip install LLMAnalyst
+    pip install git+https://github.com/eersnington/LLMAnalyst.git
+
     # For using GPTQ models
     pip install auto-gptq --extra-index-url https://huggingface.github.io/autogptq-index/whl/cu118/  
     ```
