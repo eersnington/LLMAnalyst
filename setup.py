@@ -11,7 +11,7 @@ setup(
     packages=find_packages(where="llmanalyst"),
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/ArjanCodes/2023-package",
+    url="https://github.com/eersnington/LLMAnalyst",
     author="Sree Narayanan",
     author_email="sreeaadhi07@gmail.com",
     license="MIT",
