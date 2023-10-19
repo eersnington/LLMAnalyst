@@ -6,6 +6,7 @@ Home-page: https://github.com/eersnington/LLMAnalyst
 Author: Sree Narayanan
 Author-email: sreeaadhi07@gmail.com
 License: MIT
+Platform: UNKNOWN
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3.10
 Classifier: Operating System :: OS Independent
@@ -27,7 +28,8 @@ The `LLMAnalyst` class allows you to interact with HuggingFace-based language mo
 1. Install the package:
 
     ```bash
-    pip install LLMAnalyst
+    pip install git+https://github.com/eersnington/LLMAnalyst.git
+
     # For using GPTQ models
     pip install auto-gptq --extra-index-url https://huggingface.github.io/autogptq-index/whl/cu118/  
     ```
@@ -67,3 +69,5 @@ The OpenAIGPTAnalyst class enables interaction with the OpenAI GPT-3 model. Foll
     df = pd.read_csv("data.csv")
     result = openai_analyst.conversational_chat(query, your_dataframe)
     ```
+
+
