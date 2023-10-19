@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+llmanalyst/llmanalyst.egg-info/PKG-INFO
+llmanalyst/llmanalyst.egg-info/SOURCES.txt
+llmanalyst/llmanalyst.egg-info/dependency_links.txt
+llmanalyst/llmanalyst.egg-info/requires.txt
+llmanalyst/llmanalyst.egg-info/top_level.txt

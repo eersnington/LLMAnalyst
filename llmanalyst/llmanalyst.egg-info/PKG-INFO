@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: llmanalyst
+Version: 0.0.1
+Summary: Talk to your CSV data with your huggingface llm models
+Home-page: https://github.com/eersnington/LLMAnalyst
+Author: Sree Narayanan
+Author-email: sreeaadhi07@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Language Model Analyst
+
+The Language Model Analyst is a Python package and Streamlit app that enables natural language generation and analysis using HuggingFace-based language models (LLMs) and OpenAI GPT-3. This package and app are designed to simplify and streamline interactions with these powerful language models.
+
+## Usage
+
+### Package: LLMAnalyst
+
+The `LLMAnalyst` class allows you to interact with HuggingFace-based language models. Follow these steps to use the package:
+
+1. Install the package:
+
+    ```bash
+    pip install LLMAnalyst
+    # For using GPTQ models
+    pip install auto-gptq --extra-index-url https://huggingface.github.io/autogptq-index/whl/cu118/  
+    ```
+
+2. Import and create an instance of LLMAnalyst:
+
+    ```python
+    from LLMAnalyst import LLMAnalyst
+    llm_analyst = LLMAnalyst("TheBloke/CodeLlama-13B-Instruct-GPTQ")
+    ```
+
+3. 
+    ```python
+    query = "How many number of rows are there?"
+    df = pd.read_csv("data.csv")
+    result = llm_analyst.conversational_chat(query, df)
+    ```
+
+
+The OpenAIGPTAnalyst class enables interaction with the OpenAI GPT-3 model. Follow these steps to use the package:
+
+
+1. Import and create an instance of OpenAIGPTAnalyst:
+
+    ```python
+    from LLMAnalyst import OpenAIGPTAnalyst
+
+    openai_analyst = OpenAIGPTAnalyst(
+        api_key='YOUR_OPENAI_API_KEY'
+    )
+    ```
+
+2. Communicate with GPT-3:
+
+    ```python
+    query = "Calculate the mean of monthly sold data."
+    df = pd.read_csv("data.csv")
+    result = openai_analyst.conversational_chat(query, your_dataframe)
+    ```
