@@ -1,4 +1,4 @@
-# LLMAnalyst/llm_analyst.py
+# llmanalyst/llm_analyst.py
 
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 from langchain.llms import HuggingFacePipeline, OpenAI
@@ -52,6 +52,14 @@ class HuggingfaceAnalyst:
         result = self.chain.run({'dataframes': df.head(), 'prompt': query})
         result = self.process_result(result)
         return result
+
+    def query(self, query, df):
+        result = self.conversational_chat(self, query, df)
+        try:
+            exec(result)
+            print(analyze_data(df))
+        except:
+            print("Code not found")
 
 
 class OpenAIGPTAnalyst:
