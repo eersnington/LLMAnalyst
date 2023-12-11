@@ -1,4 +1,4 @@
-
+# Streamlit app.py
 import re
 import tempfile
 import pandas as pd
@@ -6,6 +6,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import matplotlib
 from streamlit_chat import message
+# Import the LLMAnalyst Package
 from llmanalyst.llm_analyst import HuggingfaceAnalyst
 
 
@@ -31,6 +32,7 @@ def process_result(input):
 
 
 st.title("Llama2 Chat CSV - 🦜🦙")
+st.header("Minor Project By Sreenarayanan - PSG College of Arts and Science")
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Create a file uploader in the sidebar

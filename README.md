@@ -1,6 +1,6 @@
 # Language Model Analyst
 
-The Language Model Analyst is a Python package and Streamlit app that enables natural language generation and analysis using HuggingFace-based language models (LLMs) and OpenAI GPT-3. This package and app are designed to simplify and streamline interactions with these powerful language models.
+The Language Model Analyst is a Python package and Streamlit app that enables natural language generation and analysis using HuggingFace-based language models (LLMs) and OpenAI GPT-3 with LangChain. This package and app are designed to simplify and streamline interactions with these powerful language models.
 
 ## Usage
 

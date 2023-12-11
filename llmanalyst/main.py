@@ -1,4 +1,4 @@
-# llmanalyst/llm_analyst.py
+# llmanalyst/main.py
 
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 from langchain.llms import HuggingFacePipeline, OpenAI

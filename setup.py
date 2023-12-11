@@ -4,10 +4,10 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 setup(
-     name="llmanalyst",
-    version="0.0.1",
+    name="llmanalyst",
+    version="0.2.0",
     description="Talk to your CSV data with your huggingface llm models",
-    packages=find_packages(where="llmanalyst"),
+    packages=find_packages(),
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/eersnington/LLMAnalyst",

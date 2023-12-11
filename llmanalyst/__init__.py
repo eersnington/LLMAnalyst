@@ -1,3 +1,3 @@
-from llmanalyst.llm_analyst import HuggingfaceAnalyst, OpenAIGPTAnalyst
+# llmanalyst/__init__.py
 
-__all__ = ['HuggingfaceAnalyst', 'OpenAIGPTAnalyst']
+from .main import HuggingfaceAnalyst, OpenAIGPTAnalyst
