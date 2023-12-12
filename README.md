@@ -21,7 +21,7 @@ The `LLMAnalyst` class allows you to interact with HuggingFace-based language mo
 
     ```python
     from LLMAnalyst import LLMAnalyst
-    llm_analyst = LLMAnalyst("TheBloke/CodeLlama-13B-Instruct-GPTQ")
+    llm_analyst = HuggingfaceAnalyst("TheBloke/CodeLlama-13B-Instruct-GPTQ")
     ```
 
 3. 

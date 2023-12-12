@@ -1,3 +1,3 @@
 # llmanalyst/__init__.py
 
-from .main import HuggingfaceAnalyst, OpenAIGPTAnalyst
+from .main import HuggingfaceAnalyst, OpenAIGPTAnalyst, GooglePalmAnalyst
